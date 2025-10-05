@@ -15,255 +15,98 @@ export const SOCIAL_LINKS = [
 
 export const MY_STACK = {
     frontend: [
-        {
-            name: 'JavaScript',
-            icon: '/logo/js.png',
-        },
-        {
-            name: 'TypeScript',
-            icon: '/logo/ts.png',
-        },
-        {
-            name: 'React',
-            icon: '/logo/react.png',
-        },
-        {
-            name: 'Next.js',
-            icon: '/logo/next.png',
-        },
-        {
-            name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
-        },
-        {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
-            name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
-        },
+        { name: 'JavaScript', icon: '/logo/js.png' },
+        { name: 'TypeScript', icon: '/logo/ts.png' },
+        { name: 'React', icon: '/logo/react.png' },
+        { name: 'Next.js', icon: '/logo/next.png' },
+        { name: 'Tailwind CSS', icon: '/logo/tailwind.png' },
+        { name: 'GSAP', icon: '/logo/gsap.png' },
+        { name: 'Framer Motion', icon: '/logo/framer-motion.png' },
+        { name: 'Bootstrap', icon: '/logo/bootstrap.svg' },
     ],
     backend: [
-        {
-            name: 'Node.js',
-            icon: '/logo/node.png',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
-        },
+        { name: 'Node.js', icon: '/logo/node.png' },
+        { name: 'Express.js', icon: '/logo/express.png' },
     ],
     database: [
-        {
-            name: 'MySQL',
-            icon: '/logo/mysql.svg',
-        },
-        {
-            name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
-        },
-        {
-            name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
-        },
+        { name: 'MySQL', icon: '/logo/mysql.svg' },
+        { name: 'PostgreSQL', icon: '/logo/postgreSQL.png' },
+        { name: 'MongoDB', icon: '/logo/mongodb.svg' },
+        { name: 'Prisma', icon: '/logo/prisma.png' },
     ],
     tools: [
-        {
-            name: 'Git',
-            icon: '/logo/git.png',
-        },
-        {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
-        },
-        {
-            name: 'AWS',
-            icon: '/logo/aws.png',
-        },
+        { name: 'Git', icon: '/logo/git.png' },
+        { name: 'Docker', icon: '/logo/docker.svg' },
+        { name: 'AWS', icon: '/logo/aws.png' },
     ],
 };
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'MTI Electronics',
-        slug: 'mti-electronics',
-        liveUrl: 'https://mti-electronics.vercel.app/',
+        title: 'Apni Dukan — E‑commerce',
+        slug: 'apni-dukan',
+        liveUrl: 'https://ankit-ecommerce.vercel.app/',
         year: 2025,
-        description: `
-      A complete agency portfolio platform built for MTI Electronics to showcase their services, blog content, and product offerings. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
-      `,
-        role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
-      <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
-      `,
+        description: `Apni Dukan is a full-stack e‑commerce demo showcasing a responsive Tailwind + React (Vite) frontend paired with a Node/Express backend. The project demonstrates product listing and detail pages, a shopping cart and order flow, role-based signup/login (buyer & seller), and token-based authentication. It is designed as a modular example to learn full-stack development and ship a small commerce workflow quickly.`,
+        role: `Full‑stack developer — implemented the frontend UI with React + Vite and Tailwind CSS, and built a lightweight Express API for authentication, product management, and orders. Responsibilities included:
+            <ul>
+                <li>Auth: JWT-based signup/login with role (buyer/seller) handling</li>
+                <li>Frontend: Responsive product listing, product details, cart and checkout flows</li>
+                <li>Backend: Express routes for products, cart, orders and auth; simple token validation</li>
+                <li>Deployment: Deployed the frontend to Vercel (live URL included)</li>
+            </ul>`,
         techStack: [
-            'Next.js',
-            'Payload CMS',
+            'React (Vite)',
             'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
-        ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
+            'Node.js',
+            'Express',
+            'JWT Authentication',
+            'MongoDB (optional)',
+            'Cloudinary (uploads helper)',
         ],
     },
     {
-        title: 'Epikcart',
-        slug: 'epikcart',
+        title: 'Gmail Clone (Full‑stack)',
+        slug: 'gmail-clone',
         techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
+            'React (Vite)',
+            'Node.js',
+            'Express',
+            'MongoDB (Mongoose)',
+            'JWT Authentication',
+            'Axios',
+            'CSS Modules',
         ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
-        images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
-        ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
+        liveUrl: 'https://gmail-clone-fullstack.vercel.app/',
+        year: 2025,
+        description: `A full‑stack Gmail clone showcasing user signup/login with JWT, compose/send/receive email flows, and inbox/sent/trash views. Built to learn end-to-end application architecture, protected routes, and modern frontend patterns with React (Vite).`,
+        role: `Sole developer for the demo project. Implemented:
+        <ul>
+          <li>JWT-based authentication (signup/login) and protected API routes</li>
+          <li>Express API for email CRUD operations and user management</li>
+          <li>Frontend UI with React (Vite), Axios for API calls, and responsive layouts</li>
+          <li>Inbox, Sent and Trash flows, compose modal, and basic validation/error handling</li>
+        </ul>`,
     },
     {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
+        title: 'ChatApp — Real-time Group Chat',
+        slug: 'chat-app',
         techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
+            'Node.js',
+            'Express',
+            'Socket.IO',
+            'React (Vite)',
             'Tailwind CSS',
         ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
-        images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
-        techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
-    },
-    {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Ankit/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Ankit/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
-
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
+        liveUrl: 'https://chat-app-ankit.vercel.app/',
+        year: 2025,
+        description: `A small real-time group chat application using Node/Express + Socket.IO for the backend and React + Vite for the frontend. Features include joining a room with a display name, live user list, typing indicators, and message history in the session. The app is a compact demo of websockets and real-time UI patterns.`,
+        role: `Full-stack developer — implemented the backend Socket.IO server (Node + Express) and the React (Vite) frontend. Highlights:
+        <ul>
+          <li>Socket events: joinRoom, userList, sendMessage/receiveMessage, typing/userTyping, userJoined/userLeft</li>
+          <li>Simple room-based grouping and broadcast updates to connected clients</li>
+          <li>Lightweight frontend UI with message list, input, and typing indicator</li>
+          <li>Deployed frontend to Vercel and backend to a Node-friendly host (server origin configured to allow the Vite dev server)</li>
+        </ul>`,
     },
 ];
