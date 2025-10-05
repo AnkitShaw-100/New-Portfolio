@@ -104,7 +104,8 @@ const ProjectList = () => {
     };
 
     return (
-        <section className="pb-section" id="selected-projects">
+        // add top margin so Selected Projects is visually separated from the My Stack section
+        <section className="pb-section mt-12 md:mt-20" id="selected-projects">
             <div className="container">
                 <SectionTitle title="SELECTED PROJECTS" />
 

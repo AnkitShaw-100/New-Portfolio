@@ -32,10 +32,6 @@ export const MY_STACK = {
             icon: '/logo/next.png',
         },
         {
-            name: 'Redux',
-            icon: '/logo/redux.png',
-        },
-        {
             name: 'Tailwind CSS',
             icon: '/logo/tailwind.png',
         },
@@ -48,10 +44,6 @@ export const MY_STACK = {
             icon: '/logo/framer-motion.png',
         },
         {
-            name: 'Sass',
-            icon: '/logo/sass.png',
-        },
-        {
             name: 'Bootstrap',
             icon: '/logo/bootstrap.svg',
         },
@@ -60,10 +52,6 @@ export const MY_STACK = {
         {
             name: 'Node.js',
             icon: '/logo/node.png',
-        },
-        {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
         },
         {
             name: 'Express.js',
