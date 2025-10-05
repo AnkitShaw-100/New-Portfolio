@@ -1,20 +1,16 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirol@gmail.com',
+    email: 'ankitshaw6933@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Ankit, I am reaching out to you because...',
-
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/Ankit',
+    emailBody: 'Hi Ankit, I am reaching out to you because...'
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Ankit' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/Ankit' },
-    { name: 'facebook', url: 'https://www.facebook.com/Ankit.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/AnkitShaw-100' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/ankit-shaw-884b0728a/' },
+    { name: 'twitter', url: 'https://x.com/AnkitShaw750' }
 ];
 
 export const MY_STACK = {
@@ -281,28 +277,5 @@ export const PROJECTS: IProject[] = [
 
             I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
         role: ``,
-    },
-];
-
-export const MY_EXPERIENCE = [
-    {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
-    },
-    {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
-    },
-    {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
     },
 ];

@@ -82,7 +82,13 @@ const Button = ({
                 <a
                     className={buttonClasses}
                     {...props}
-                    href={props.href.toString() || '#'}
+                    href={
+                        typeof props.href === 'string'
+                            ? props.href
+                            : props.href
+                            ? props.href.toString()
+                            : '#'
+                    }
                 >
                     {variant !== 'link' && (
                         <span className="absolute top-[200%] left-0 right-0 h-full bg-white rounded-[50%] group-hover:top-0 transition-all duration-500 scale-150"></span>

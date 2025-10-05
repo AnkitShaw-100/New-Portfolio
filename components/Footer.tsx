@@ -7,17 +7,32 @@ interface RepoStats {
 }
 
 const Footer = async () => {
-    const repoStats = await fetch(
-        'https://api.github.com/repos/Ankit/portfolio-2.0',
-        {
+    // Fetch user's public repositories from GitHub API and sum stars/forks.
+    // This avoids fetching the HTML profile page which causes JSON.parse errors.
+    let stargazers_count = 0;
+    let forks_count = 0;
+
+    try {
+        const res = await fetch('https://api.github.com/users/AnkitShaw-100/repos?per_page=100', {
             next: {
                 revalidate: 60 * 60, // 1 hour
             },
-        },
-    );
+            // GitHub API requires a User-Agent header in some contexts; Next's fetch will send default headers.
+        });
 
-    const { stargazers_count, forks_count } =
-        (await repoStats.json()) as RepoStats;
+        if (res.ok) {
+            const repos = (await res.json()) as RepoStats[];
+            for (const r of repos) {
+                stargazers_count += r.stargazers_count || 0;
+                forks_count += r.forks_count || 0;
+            }
+        } else {
+            // Non-OK response (rate limit, etc.) — leave counts at 0 and continue.
+            // Optionally you could add logging here.
+        }
+    } catch {
+        // Network or parsing error — swallow and show fallback values.
+    }
 
     return (
         <footer className="text-center pb-5" id="contact">
@@ -32,7 +47,7 @@ const Footer = async () => {
 
                 <div className="">
                     <a
-                        href="https://github.com/Ankit/portfolio-2.0"
+                        href="https://github.com/AnkitShaw-100"
                         target="_blank"
                         className="leading-none text-muted-foreground hover:underline hover:text-white"
                     >
