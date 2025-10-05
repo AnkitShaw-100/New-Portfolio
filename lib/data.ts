@@ -64,6 +64,7 @@ export const PROJECTS: IProject[] = [
             'MongoDB (optional)',
             'Cloudinary (uploads helper)',
         ],
+        images: ['/projects/images/dukan-home.png', '/projects/images/dukan-about.png', '/projects/images/dukan-cart.png'],
     },
     {
         title: 'Gmail Clone (Full‑stack)',
@@ -87,6 +88,11 @@ export const PROJECTS: IProject[] = [
           <li>Frontend UI with React (Vite), Axios for API calls, and responsive layouts</li>
           <li>Inbox, Sent and Trash flows, compose modal, and basic validation/error handling</li>
         </ul>`,
+        images: [
+            '/projects/images/gmail-login-page.png',
+            '/projects/images/gmail-home-page.png',
+            '/projects/images/gmail-home-page2.png',
+        ],
     },
     {
         title: 'ChatApp — Real-time Group Chat',
@@ -108,5 +114,6 @@ export const PROJECTS: IProject[] = [
           <li>Lightweight frontend UI with message list, input, and typing indicator</li>
           <li>Deployed frontend to Vercel and backend to a Node-friendly host (server origin configured to allow the Vite dev server)</li>
         </ul>`,
+        images: ['/projects/images/chat-loginPage.png', '/projects/images/chat-window.png'],
     },
 ];
