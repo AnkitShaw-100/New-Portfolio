@@ -1,5 +1,13 @@
 import { DM_Sans, Lora } from "next/font/google";
+import {
+  ClerkProvider,
+  Show,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/nextjs";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import Header from "@/components/Header";
 import "./globals.css";
 
 const lora = Lora({
@@ -23,18 +31,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${lora.variable} ${dmSans.variable} font-sans`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+      <ClerkProvider>
+        <body className={`${lora.variable} ${dmSans.variable} font-sans`}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
           >
-          {/* Header */}
-          <main className="min-h-screen">{children}</main>
-          {/* Footer */}
-        </ThemeProvider>
-      </body>
+            {/* Header */}
+            <Header />
+            <main className="min-h-screen">{children}</main>
+            {/* Footer */}
+          </ThemeProvider>
+        </body>
+      </ClerkProvider>
     </html>
   );
 }

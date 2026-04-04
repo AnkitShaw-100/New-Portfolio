@@ -2,7 +2,11 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div>
-      <Button variant="gold" size="hero">Ankit</Button>
+      <section className="pt-28 sm:pt-32">
+        <Button variant="gold" size="hero">
+          Ankit
+        </Button>
+      </section>
     </div>
   );
 }
