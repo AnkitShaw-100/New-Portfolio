@@ -6,7 +6,7 @@ import {
   SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
-import { ThemeProvider } from "@/components/ui/theme-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
 import "./globals.css";
 

@@ -1,4 +1,4 @@
-import { GoldTitle, GrayTitle } from "@/components/reusables";
+import { GoldTitle, GrayTitle } from "@/components/Reusables";
 
 export const LOGOS = [
   { src: "/amazon.svg", alt: "Amazon" },
